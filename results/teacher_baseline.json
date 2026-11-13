@@ -1,0 +1,9 @@
+{
+  "name": "teacher_baseline",
+  "val_acc": 0.288,
+  "test_acc": 0.2948,
+  "params": 15530762,
+  "size_mb": 62.165033,
+  "train_time_s": 519.0063583850861,
+  "epochs": 2
+}

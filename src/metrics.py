@@ -1,4 +1,11 @@
 import torch.nn as nn
+import io, json, os 
+import io
+import json
+import os
+import torch
+
+
 
 # Conta in automatico il numero di parametri della rete
 def count_parameters(model: nn.Module, verbose: bool = False) -> dict:
@@ -26,3 +33,16 @@ def print_param_summary(counts: dict, title: str = "model"):
     print(f"Total:     {t:,}")
     for k in ("conv", "linear", "bn"):
         print(f"{k:<10} {counts[k]:,} ({100 * counts[k] / t:.2f}%)")
+
+
+def model_size_mb(model):
+    """Dimensione della state_dict serializzata (include i buffer dei BN)."""
+    buf = io.BytesIO()
+    torch.save(model.state_dict(), buf)
+    return buf.getbuffer().nbytes / 1e6
+
+
+def save_result(name, results_dir="../results", **fields):
+    os.makedirs(results_dir, exist_ok=True)
+    with open(f"{results_dir}/{name}.json", "w") as f:
+        json.dump({"name": name, **fields}, f, indent=2)

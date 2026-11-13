@@ -1,0 +1,9 @@
+{
+  "name": "student_baseline",
+  "val_acc": 0.5322,
+  "test_acc": 0.5291,
+  "params": 245226,
+  "size_mb": 1.003689,
+  "train_time_s": 54.35316753387451,
+  "epochs": 2
+}
