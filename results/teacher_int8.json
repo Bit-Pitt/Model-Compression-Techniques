@@ -1,0 +1,10 @@
+{
+  "name": "teacher_int8",
+  "val_acc": 0.8982,
+  "test_acc": 0.892,
+  "params": 15525258,
+  "size_mb": 15.566151,
+  "macs": 215689216,
+  "energy_uj": 64.7067648,
+  "peak_act_kb": 81.92
+}

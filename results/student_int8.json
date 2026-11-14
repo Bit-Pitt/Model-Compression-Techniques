@@ -1,0 +1,10 @@
+{
+  "name": "student_int8",
+  "val_acc": 0.7494,
+  "test_acc": 0.7546,
+  "params": 110021,
+  "size_mb": 0.113548,
+  "macs": 1625629,
+  "energy_uj": 0.48768870000000003,
+  "peak_act_kb": 8.192
+}

@@ -5,7 +5,7 @@ VGG11_CONFIG = [64, "max_pool", 128, "max_pool", 256, 256, "max_pool",
                 512, 512, 512, 512, "max_pool"]
 
 TEACHER_HIDDEN = (2048, 1024)
-STUDENT_WIDTH = 1 / 8               # Student --> circa 1/64 dei parametri del Teacher      [stessa struttura]
+STUDENT_WIDTH = 1 / 12               # Student --> circa 1/64 dei parametri del Teacher      [stessa struttura]
                                         # (diminuisce con il quadrato per via dei kernel quadrati)
 
 

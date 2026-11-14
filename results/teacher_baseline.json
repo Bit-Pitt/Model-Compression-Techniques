@@ -1,9 +1,14 @@
 {
   "name": "teacher_baseline",
-  "val_acc": 0.288,
-  "test_acc": 0.2948,
+  "val_acc": 0.8984,
+  "test_acc": 0.8928,
   "params": 15530762,
   "size_mb": 62.165033,
-  "train_time_s": 519.0063583850861,
-  "epochs": 2
+  "train_time_s": 8582.252898931503,
+  "epochs": 30,
+  "macs": 215689216,
+  "energy_uj": 992.1703936000001,
+  "latency_ms_median": 8.303199768066406,
+  "latency_ms_std": 0.21530207991600037,
+  "peak_act_kb": 327.68
 }
