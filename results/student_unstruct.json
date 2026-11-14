@@ -1,0 +1,14 @@
+{
+  "name": "student_unstruct",
+  "val_acc": 0.7292,
+  "test_acc": 0.7413,
+  "sparsity": 0.4,
+  "mode": "global",
+  "nonzero_params": 66211,
+  "macs_dense": 1625629,
+  "params": 110021,
+  "size_mb": 0.396274,
+  "macs": 1137555,
+  "energy_uj": 5.232753000000001,
+  "peak_act_kb": 32.768
+}

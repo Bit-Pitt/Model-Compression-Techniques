@@ -1,0 +1,14 @@
+{
+  "name": "teacher_unstruct",
+  "val_acc": 0.8826,
+  "test_acc": 0.8758,
+  "sparsity": 0.6,
+  "mode": "global",
+  "nonzero_params": 6213603,
+  "macs_dense": 215689216,
+  "params": 15525258,
+  "size_mb": 37.26995,
+  "macs": 110691187,
+  "energy_uj": 509.17946020000005,
+  "peak_act_kb": 327.68
+}

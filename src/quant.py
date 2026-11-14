@@ -1,5 +1,12 @@
 import copy, torch, torch.nn as nn
 
+'''
+    Quantizzazione W8A8 PTQ (Post Training Quantization) simulata in pyTorch:
+    - pesi per canale di output  [per channel quantization], simmetrica, una scala per canale
+'''
+
+
+
 def fold_bn(model):
     """Copia del modello con ogni BatchNorm fuso nel Conv che lo precede."""
     model = copy.deepcopy(model).eval()

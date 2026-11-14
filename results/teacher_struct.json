@@ -1,0 +1,15 @@
+{
+  "name": "teacher_struct",
+  "val_acc": 0.8896,
+  "test_acc": 0.8794,
+  "conv_ratio": 0.0,
+  "fc_ratio": 0.8,
+  "skip_first": 2,
+  "params": 10146885,
+  "size_mb": 40.595105,
+  "macs": 210313300,
+  "energy_uj": 967.44118,
+  "peak_act_kb": 327.68,
+  "latency_ms_median": 7.218100070953369,
+  "latency_ms_std": 0.536954402923584
+}
