@@ -1,0 +1,14 @@
+{
+  "name": "student_lowrank",
+  "val_acc": 0.7502,
+  "test_acc": 0.7558,
+  "tau": 0.97,
+  "skip_first": 2,
+  "params": 109720,
+  "size_mb": 0.44675,
+  "macs": 1620813,
+  "energy_uj": 7.455739800000001,
+  "peak_act_kb": 32.768,
+  "latency_ms_median": 0.5486000180244446,
+  "latency_ms_std": 0.1339016854763031
+}
