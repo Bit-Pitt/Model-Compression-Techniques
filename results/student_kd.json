@@ -1,0 +1,16 @@
+{
+  "name": "student_kd",
+  "val_acc": 0.7538,
+  "test_acc": 0.7563,
+  "T": 4.0,
+  "alpha": 0.1,
+  "epochs": 30,
+  "train_time_s": 3028.144084215164,
+  "params": 110481,
+  "size_mb": 0.462377,
+  "macs": 1625629,
+  "energy_uj": 7.477893400000001,
+  "peak_act_kb": 32.768,
+  "latency_ms_median": 0.5860999822616577,
+  "latency_ms_std": 0.4720301628112793
+}
