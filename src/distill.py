@@ -3,7 +3,7 @@ import torch
 import torch.nn.functional as F
 from src.train import evaluate
 
-
+# Formulazione della loss di distillazione (Hinton et al. 2015)
 def distillation_loss(s_logits, t_logits, y, T=4.0, alpha=0.1):
     """alpha * CE(hard label) + (1 - alpha) * T^2 * KL(teacher_T || student_T)."""
     hard = F.cross_entropy(s_logits, y)
@@ -12,7 +12,7 @@ def distillation_loss(s_logits, t_logits, y, T=4.0, alpha=0.1):
                     reduction="batchmean") * (T * T)
     return alpha * hard + (1 - alpha) * soft
 
-
+# Nuovo flusso di train di un epoca con distillazione: il teacher è fisso, lo student impara da hard + soft label
 def train_one_epoch_kd(student, teacher, loader, opt, device, T, alpha):
     student.train()      # BN e Dropout dello student in modalità training
     teacher.eval()       # il teacher è fisso: BN con running stats, niente dropout
@@ -35,7 +35,7 @@ def train_one_epoch_kd(student, teacher, loader, opt, device, T, alpha):
         n += x.size(0)
     return total_loss / n, correct / n, t_correct / n
 
-
+# Training di distllation: SGD nesterov + cosine annealing, checkpoint del modello migliore sulla val   [come per fit()]
 def fit_kd(student, teacher, train_loader, val_loader, device, epochs=60, lr=0.05, momentum=0.9,
            weight_decay=5e-4, T=4.0, alpha=0.1, ckpt_path=None):
     """Stessa ricetta di fit() (SGD nesterov + cosine, best ckpt sulla val) con la loss di distillation.

@@ -1,0 +1,13 @@
+{
+  "name": "teacher_combo_struct_int8",
+  "val_acc": 0.889,
+  "test_acc": 0.879,
+  "conv_ratio": 0.0,
+  "fc_ratio": 0.8,
+  "skip_first": 2,
+  "params": 10146885,
+  "size_mb": 10.170579,
+  "macs": 210313300,
+  "energy_uj": 63.093990000000005,
+  "peak_act_kb": 81.92
+}

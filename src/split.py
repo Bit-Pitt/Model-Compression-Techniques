@@ -13,7 +13,7 @@ from src.train import evaluate
 FLASH_KB = 4096   # flash tipica di un ESP32 (ipotesi)
 SRAM_KB = 300     # SRAM utilizzabile per le attivazioni (ipotesi)
 
-
+# Solo profiling di MACs e parametri 
 @torch.no_grad()
 def op_profile(model, input_size=(1, 3, 32, 32)):
     """Una riga per ogni Conv/Linear/MaxPool, in ordine di esecuzione: elementi in/out, MACs, parametri
@@ -41,7 +41,7 @@ def op_profile(model, input_size=(1, 3, 32, 32)):
         h.remove()
     return ops
 
-
+# Genere etichette testuali per visualizzare i tagli 
 def cut_labels(ops):
     """Etichetta leggibile per ogni n_head (0 = tutto sul fog)."""
     n_layers = max(o["layer"] for o in ops) + 1
@@ -59,7 +59,10 @@ def cut_labels(ops):
         labels.append(f"dopo {name}" + (" (tutto sul device)" if i == n_layers - 1 else ""))
     return labels
 
-# Costruisce il modelli splittato  (primi n layer quantizzati)
+# Costruisce il modelli splittato  (primi n layer quantizzati) 
+# - parti dal modello già completamente quantizzato (W8A8) 
+# - i layer dopo n_head  modifichi in modo che siano fp32
+# - ultima parte (doppio for)  disattiva tutti i quantizzatori delle attivazioni (FakeQuant) che si trovano dopo il punto di taglio n_heads
 def build_split_model(folded, qmodel, n_head):
     """Modello ibrido: i primi n_head layer di calcolo sono W8A8, gli altri fp32.
     Il FakeQuant all'uscita del head rappresenta il tensore int8 che viaggia verso il fog."""
