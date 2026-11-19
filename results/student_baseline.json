@@ -1,14 +1,14 @@
 {
   "name": "student_baseline",
-  "val_acc": 0.7492,
-  "test_acc": 0.7552,
-  "params": 110481,
-  "size_mb": 0.462377,
-  "train_time_s": 3299.0155234336853,
+  "val_acc": 0.8102,
+  "test_acc": 0.8055,
+  "params": 245226,
+  "size_mb": 1.003689,
+  "train_time_s": 823.2778885364532,
   "epochs": 30,
-  "macs": 1625629,
-  "energy_uj": 7.477893400000001,
-  "latency_ms_median": 0.718999981880188,
-  "latency_ms_std": 0.10637443512678146,
-  "peak_act_kb": 32.768
+  "macs": 3564800,
+  "energy_uj": 16.39808,
+  "peak_act_kb": 45.056,
+  "latency_ms_median": 0.6899999976158142,
+  "latency_ms_std": 0.08708085864782333
 }

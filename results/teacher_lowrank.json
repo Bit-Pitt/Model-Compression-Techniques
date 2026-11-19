@@ -9,6 +9,6 @@
   "macs": 132766720,
   "energy_uj": 610.7269120000001,
   "peak_act_kb": 327.68,
-  "latency_ms_median": 11.407600402832031,
-  "latency_ms_std": 0.5036415457725525
+  "latency_ms_median": 11.660799980163574,
+  "latency_ms_std": 1.1470789909362793
 }

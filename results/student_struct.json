@@ -1,15 +1,15 @@
 {
   "name": "student_struct",
-  "val_acc": 0.743,
-  "test_acc": 0.7441,
+  "val_acc": 0.7872,
+  "test_acc": 0.7877,
   "conv_ratio": 0.0,
-  "fc_ratio": 0.3,
+  "fc_ratio": 0.5,
   "skip_first": 2,
-  "params": 93457,
-  "size_mb": 0.381345,
-  "macs": 1609142,
-  "energy_uj": 7.402053200000001,
-  "peak_act_kb": 32.768,
-  "latency_ms_median": 0.5439000129699707,
-  "latency_ms_std": 0.12193357199430466
+  "params": 186362,
+  "size_mb": 0.753121,
+  "macs": 3506816,
+  "energy_uj": 16.1313536,
+  "peak_act_kb": 45.056,
+  "latency_ms_median": 0.6626999974250793,
+  "latency_ms_std": 0.11696907877922058
 }

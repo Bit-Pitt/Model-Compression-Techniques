@@ -1,14 +1,14 @@
 {
   "name": "student_unstruct",
-  "val_acc": 0.7292,
-  "test_acc": 0.7413,
+  "val_acc": 0.7882,
+  "test_acc": 0.7852,
   "sparsity": 0.4,
   "mode": "global",
-  "nonzero_params": 66211,
-  "macs_dense": 1625629,
-  "params": 110021,
-  "size_mb": 0.396274,
-  "macs": 1137555,
-  "energy_uj": 5.232753000000001,
-  "peak_act_kb": 32.768
+  "nonzero_params": 147018,
+  "macs_dense": 3564800,
+  "params": 244538,
+  "size_mb": 0.880632,
+  "macs": 2537538,
+  "energy_uj": 11.6726748,
+  "peak_act_kb": 45.056
 }

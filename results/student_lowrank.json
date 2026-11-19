@@ -1,14 +1,14 @@
 {
   "name": "student_lowrank",
-  "val_acc": 0.7502,
-  "test_acc": 0.7558,
-  "tau": 0.97,
+  "val_acc": 0.785,
+  "test_acc": 0.786,
+  "tau": 0.95,
   "skip_first": 2,
-  "params": 109720,
-  "size_mb": 0.44675,
-  "macs": 1620813,
-  "energy_uj": 7.455739800000001,
-  "peak_act_kb": 32.768,
-  "latency_ms_median": 0.5486000180244446,
-  "latency_ms_std": 0.1339016854763031
+  "params": 231994,
+  "size_mb": 0.93806,
+  "macs": 3375232,
+  "energy_uj": 15.5260672,
+  "peak_act_kb": 45.056,
+  "latency_ms_median": 0.6650000214576721,
+  "latency_ms_std": 0.1332380622625351
 }

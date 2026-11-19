@@ -8,7 +8,7 @@
   "epochs": 30,
   "macs": 215689216,
   "energy_uj": 992.1703936000001,
-  "latency_ms_median": 8.303199768066406,
-  "latency_ms_std": 0.21530207991600037,
+  "latency_ms_median": 7.997399806976318,
+  "latency_ms_std": 0.2262810468673706,
   "peak_act_kb": 327.68
 }
